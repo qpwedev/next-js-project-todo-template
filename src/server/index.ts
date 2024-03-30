@@ -11,12 +11,12 @@ import { eq } from "drizzle-orm";
 const sqlite = new Database("sqlite.db");
 const db = drizzle(sqlite);
 
-migrate(
-    db,
-    {
-        migrationsFolder: "drizzle"
-    }
-)
+// migrate(
+//    db,
+//   {
+//        migrationsFolder: "drizzle"
+//    }
+//)
 
 export const appRouter = router(
     {
